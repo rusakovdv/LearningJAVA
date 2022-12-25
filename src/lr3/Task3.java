@@ -46,10 +46,7 @@ public class Task3 {
                 }while (z < nums.length);
                 break;
         }
-
-
         System.out.println("Число фибоначи: " + Arrays.toString(nums));
-
         }
     }
 

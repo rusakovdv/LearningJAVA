@@ -29,10 +29,6 @@ public class Main {
         }else if (a >= 1000) {
             System.out.println("legion");
         }
-
-
-
-
         out.flush();
     }
 }
