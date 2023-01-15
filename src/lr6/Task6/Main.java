@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 3, 5, 7, 9, 10};
+        int[] arr = new int[]{1, 3, 5, 7, 9, 10}; // массив передаваемый агрументом
         System.out.println(Arrays.toString(Task6.modarr(arr, 5)));
     }
 }
