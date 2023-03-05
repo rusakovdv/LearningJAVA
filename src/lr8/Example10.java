@@ -8,7 +8,9 @@ public class Example10 {
         PrintWriter out=null;
         try {
 // Создание потоков
-            br = new BufferedReader(new InputStreamReader(new FileInputStream("E:\\MyFile1.txt"),"cp1251"));
+            br = new BufferedReader(
+                    new InputStreamReader(
+                            new FileInputStream("E:\\MyFile1.txt"),"cp1251"));
             out = new PrintWriter("E:\\MyFile2.txt","cp1251");
 // Переписывание информации из одного файла в другой
             int lineCount = 0;

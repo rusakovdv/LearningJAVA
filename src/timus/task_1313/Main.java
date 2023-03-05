@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
     private static int size;
     private static int matrix[][];
-
     private static String output = "";
 
     public static void main(String args[]){
@@ -15,21 +14,16 @@ public class Main {
                 matrix[i][j] = scanner.nextInt();
             }
         }
-
         for(int i = 0; i < size; i++){
             int[] index = {i, 0};
             output += getDiag(index, false);
         }
-
         for (int i = 1; i < size; i++){
             int[] index = {size - 1, i};
             output += getDiag(index, true);
         }
-
         System.out.print(output.substring(0, output.length()-1));
-
     }
-
     private static String getDiag(int index[], boolean bottom){
         String output = "";
         if (!bottom){

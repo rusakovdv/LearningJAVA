@@ -31,8 +31,11 @@ public class Task1 {
             }
         bw.flush();
             bw.close();
-            br = new BufferedReader(new InputStreamReader(new FileInputStream(f1),"UTF-8"));
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(f2)));
+            br = new BufferedReader(
+                    new InputStreamReader(
+                            new FileInputStream(f1),"UTF-8"));
+            BufferedWriter writer = new BufferedWriter(
+                    new OutputStreamWriter(new FileOutputStream(f2)));
             for (int i = 0; i < 4; i++){
                 s = br.readLine();
                if (i == 1) {

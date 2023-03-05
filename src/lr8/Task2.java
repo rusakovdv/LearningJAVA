@@ -10,8 +10,12 @@ public class Task2 {
         BufferedReader br = null;
         BufferedWriter bw = null;
         try{
-            br = new BufferedReader(new InputStreamReader(new FileInputStream("F:\\text1.txt")));
-            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("F:\\text2.txt")));
+            br = new BufferedReader(
+                    new InputStreamReader(
+                            new FileInputStream("F:\\text1.txt")));
+            bw = new BufferedWriter(
+                    new OutputStreamWriter(
+                            new FileOutputStream("F:\\text2.txt")));
             String s;
 
             int lineCount = 0;
